@@ -1,0 +1,13 @@
+/* search bar */
+.search-box {
+    width: 300px;
+}
+
+.btn-search img {
+    width: 20px; 
+    height: 20px;
+}
+
+.input-search {
+    padding-left: 10px; 
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Agenda Ai</title>
+</head>
+<body style="background-color: grey;">
+    <script src="/webjars/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <header>
+        <nav class="navbar navbar-light bg-white fixed-bottom">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-around w-100">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <img src="img/icons8-home-56.png" width="56" height="56" alt="home" class="img-fluid"/>
+                    </a>
+                    <a class="nav-link" aria-current="page" href="#">
+                        <img src="img/icons8-list-56.png" width="56" height="56" alt="list" class="img-fluid"/>
+                    </a>
+                    <a class="nav-link" aria-current="page" href="#">
+                        <img src="img/icons8-heart-56.png" width="56" height="56" alt="heart" class="img-fluid"/>
+                    </a>
+                    <a class="nav-link" aria-current="page" href="#">
+                        <img src="img/icons8-notification-56.png" width="56" height="56" alt="alert" class="img-fluid"/>
+                    </a>
+                    <a class="nav-link" aria-current="page" href="#">
+                        <img src="img/icons8-test-account-56.png" width="56" height="56" alt="profile" class="img-fluid"/>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="search-box rounded-pill d-flex align-items-center">
+        <button class="btn btn-outline-secondary rounded-pill btn-search"><img src="img/icons8-search-41.png" alt="Search"></button>
+        <input type="text" class="form-control rounded-pill border-0" placeholder="Pesquisar por serviços, empresas...">
+    </div>
+
+</body>
+</html>
