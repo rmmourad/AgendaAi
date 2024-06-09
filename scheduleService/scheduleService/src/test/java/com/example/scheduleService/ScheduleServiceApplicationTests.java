@@ -1,10 +1,10 @@
-package com.agendaai.job;
+package com.example.scheduleService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JobApplicationTests {
+class ScheduleServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

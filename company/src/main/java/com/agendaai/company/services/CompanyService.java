@@ -38,8 +38,6 @@ public class CompanyService {
             return companyRepository.save(existingCompany);
         }
 
-        // TODO: Trocar por trycatch e se der errado soltar uma exception
-        // Retornar null em caso de erro pode dar erro no banco de dados
         return null;
     }
     

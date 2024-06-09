@@ -1,13 +1,13 @@
-package com.agendaai.job;
+package com.example.scheduleService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JobApplication {
+public class ScheduleServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JobApplication.class, args);
+		SpringApplication.run(ScheduleServiceApplication.class, args);
 	}
 
 }
