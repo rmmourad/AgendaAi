@@ -1,4 +1,4 @@
-package com.example.scheduleService;
+package com.agendaai.scheduleService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

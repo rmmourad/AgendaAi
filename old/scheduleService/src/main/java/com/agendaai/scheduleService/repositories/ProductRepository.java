@@ -1,10 +1,10 @@
-package com.example.scheduleService.repositories;
+package com.agendaai.scheduleService.repositories;
 
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.scheduleService.models.ProductModel;
+import com.agendaai.scheduleService.models.ProductModel;
 
 public interface ProductRepository extends JpaRepository<ProductModel, UUID>{
 

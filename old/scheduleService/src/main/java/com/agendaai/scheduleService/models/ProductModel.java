@@ -1,6 +1,7 @@
-package com.example.scheduleService.models;
+package com.agendaai.scheduleService.models;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.UUID;
 
 import jakarta.persistence.Entity;
@@ -20,6 +21,7 @@ public class ProductModel implements Serializable{
     private UUID companyId;
     private double productPrice;
     private String productDescr;
+    private ArrayList<String> productPics;
     
     public UUID getProductId() {
         return productId;
@@ -37,8 +39,6 @@ public class ProductModel implements Serializable{
         this.companyId = id;
     }
     
-
-
     public double getProductPrice() {
         return productPrice;
     }
@@ -54,5 +54,18 @@ public class ProductModel implements Serializable{
     public void setProductDescr(String productDescr) {
         this.productDescr = productDescr;
     }
+
+    public static long getSerialversionuid() {
+        return serialVersionUID;
+    }
+
+    public ArrayList<String> getProductPics() {
+        return productPics;
+    }
+
+    public void setProductPics(ArrayList<String> productPics) {
+        this.productPics = productPics;
+    }
+
     
 }
