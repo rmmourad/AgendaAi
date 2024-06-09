@@ -1,12 +1,13 @@
-package com.agendaai.scheduleService.services;
+package com.agendaai.products.services;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.agendaai.scheduleService.models.ProductModel;
-import com.agendaai.scheduleService.repositories.ProductRepository;
+import com.agendaai.products.models.ProductModel;
+import com.agendaai.products.repositories.ProductRepository;
 
 import jakarta.transaction.Transactional;
 
@@ -22,6 +23,10 @@ public class ProductService {
 
     public ProductModel getProductByid(UUID productId) {
         return productRepository.findById(productId).orElse(null);
+    }
+
+    public List<ProductModel> getAllProducts(UUID productId) {
+        return productRepository.findAll();
     }
 
     @Transactional
@@ -41,5 +46,5 @@ public class ProductService {
     public void deleteProductById(UUID productId) {
         productRepository.deleteById(productId);
     }
-    
+
 }
