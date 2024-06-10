@@ -63,7 +63,7 @@ também é possivel usar o [Postman](https://www.postman.com/downloads/) (Baixe 
 - Escreva um json baseado no que deseja inserir ou alterar.
 
 > Se tanto o cliente quanto o servidor estiverem rodando na mesma máquina, é possível que você enfrente erros de [CORS](https://pt.wikipedia.org/wiki/Cross-origin_resource_sharing).
-> É possível contorna-los através de um novo tipo de arquivo configuration e rodando o seu cliente em um servidor HTTP. Um jeito prático é em python:
+> É possível contorna-los através de um novo tipo de arquivo [configuration](https://cursos.alura.com.br/forum/topico-cors-113963) e rodando o seu cliente em um servidor HTTP. Um jeito prático é em python:
 
 ```console
 cd E:\MSAGENDAAI\html\
