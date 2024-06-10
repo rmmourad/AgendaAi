@@ -32,7 +32,7 @@ public class CustomerService {
             existingCustomer.setCustomerName(nCustomer.getCustomerName());
             existingCustomer.setCustomerEmail(nCustomer.getCustomerEmail());
             existingCustomer.setCustomerCpf(nCustomer.getCustomerCpf());
-            existingCustomer.setCustomerPassword(nCustomer.getCustomerPassword());
+            // existingCustomer.setCustomerPassword(nCustomer.getCustomerPassword());
             existingCustomer.setCustomerTelNumber(nCustomer.getCustomerTelNumber());
             return customerRepository.save(existingCustomer);
         }

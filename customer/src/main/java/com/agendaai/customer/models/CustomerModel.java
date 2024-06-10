@@ -20,7 +20,7 @@ public class CustomerModel implements Serializable{
     private String customerName;
     private String customerEmail;
     private String customerCpf;
-    private String customerPassword;
+    // private String customerPassword;
     private String customerTelNumber;
     
     public static long getSerialversionuid() {
@@ -51,13 +51,13 @@ public class CustomerModel implements Serializable{
         this.customerCpf = customerCPF;
     }
     
-    public String getCustomerPassword() {
-        return customerPassword;
-    }
+    // public String getCustomerPassword() {
+    //     return customerPassword;
+    // }
     
-    public void setCustomerPassword(String customerPassword) {
-        this.customerPassword = customerPassword;
-    }
+    // public void setCustomerPassword(String customerPassword) {
+    //     this.customerPassword = customerPassword;
+    // }
     
     public String getCustomerTelNumber() {
         return customerTelNumber;

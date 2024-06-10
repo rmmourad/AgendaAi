@@ -26,9 +26,9 @@
 
 ##### vscode
 
-Com jdk 21 instalado no sistema, instale as extensões (Spring Boot Extension Pack)[https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack]
+Com jdk 21 instalado no sistema, instale as extensões [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)
 
-(Extension Pack for Java)[https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack]. Uma vez esses instalados é possivel executar o projeto clicando no ícone com titulo Run no canto superior do vscode. Caso não apareça tente reiniciar ou selecionar o arquivo Main, presente na root do pacote principal.
+[Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) uma vez esses instalados é possivel executar o projeto clicando no ícone com titulo Run no canto superior do vscode. Caso não apareça tente reiniciar ou selecionar o arquivo Main, presente na root do pacote principal.
 
 
 
@@ -55,9 +55,9 @@ spring.jpa.hibernate.ddl-auto=update
 ### Testes
 
 É possível integrar o backend a algum front atráves de linguagens e fazer requisições usando fetch, entretanto
-também é possivel usar o (Postman)[https://www.postman.com/downloads/] (Baixe a versão para desktop para acessar localhost). 
+também é possivel usar o [Postman](https://www.postman.com/downloads/) (Baixe a versão para desktop para acessar localhost). 
 
 - Selecione o método HTTP desejado (Apenas Post, Get, Put, Delete são suportados atualmente).
-- Informe a url (http://localhost:808x/customers/
+- Informe a url "http://localhost:808x/customers"
 - Clique em Body e vá em Raw
 - Escreva um json baseado no que deseja inserir ou alterar.

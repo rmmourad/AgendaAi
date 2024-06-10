@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Empresas</title>
+    <style>
+        .company {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Empresas</h1>
+    <div id="company-list"></div>
+
+    <script>
+        async function fetchCompanies() {
+            try {
+                const response = await fetch('http://localhost:8080/companies');
+                const companies = await response.json();
+                displayCompanies(companies);
+            } catch (error) {
+                console.error('Erro ao buscar empresas:', error);
+            }
+        }
+
+        function displayCompanies(companies) {
+            const companyList = document.getElementById('company-list');
+            companies.forEach(company => {
+                const companyDiv = document.createElement('div');
+                companyDiv.className = 'company';
+                companyDiv.innerHTML = `
+                    <p><strong>ID:</strong> ${company.companyID}</p>
+                    <p><strong>Nome:</strong> ${company.companyName}</p>
+                    <p><strong>CEP:</strong> ${company.companyCep}</p>
+                    <p><strong>CNPJ:</strong> ${company.companyCnpj}</p>
+                    <p><strong>Email:</strong> ${company.companyEmail}</p>
+                    <p><strong>Telefone:</strong> ${company.companyTelNumber}</p>
+                    <p><strong>Redes Sociais:</strong> ${company.companySocialLinks ? company.companySocialLinks : 'N/A'}</p>
+                `;
+                companyList.appendChild(companyDiv);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchCompanies);
+    </script>
+</body>
+</html>
