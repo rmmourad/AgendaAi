@@ -3,6 +3,7 @@ package com.agendaai.products.models;
 import java.util.ArrayList;
 import java.util.UUID;
 
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +21,7 @@ private static final long serialVersionUID = 1L;
     private UUID companyId;
     private double productPrice;
     private String productDescr;
-    private ArrayList<String> productPics;
+    private String productPic;
     
     public UUID getProductId() {
         return productId;
@@ -58,12 +59,12 @@ private static final long serialVersionUID = 1L;
         return serialVersionUID;
     }
 
-    public ArrayList<String> getProductPics() {
-        return productPics;
+    public String getProductPics() {
+        return productPic;
     }
 
-    public void setProductPics(ArrayList<String> productPics) {
-        this.productPics = productPics;
+    public void setProductPics(String productPic) {
+        this.productPic = productPic;
     }
     
 }
