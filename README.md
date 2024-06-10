@@ -4,7 +4,7 @@
 
 ### Depêndencias/Requisitos
 
-- java 21
+- JDK 21
 
 - Postgres
 
@@ -40,7 +40,7 @@ configure ele para as informações presentes na sua máquina.
 
 Informe seu nome de usuario do postgres e a senha para conectar com ele. Dentro do PGAdmin crie as tabelas com o nome _ms-customer_, _ms-company_,_ms-product,__ms-schedule_.
 Não é necessario adicionar nenhuma coluna ou propriedade já que isso é feito de forma automatica. Caso deseje mudar o nome da tabela, o novo nome deve ser identificado em
-_resources\nome_do_arquivo.properties_, ao final da url presente no campo spring.datasource.url
+_resources\nome_do_arquivo.properties_, ao final da url presente no campo spring.datasource.url=...
 
 ```java
 spring.application.name=customer
