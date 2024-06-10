@@ -1,5 +1,6 @@
 package com.agendaai.company.services;
 
+import java.util.ArrayList;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,10 @@ public class CompanyService {
 
     public CompanyModel getCompanyById(UUID companyId) {
         return companyRepository.findById(companyId).orElse(null);
+    }
+
+    public ArrayList<CompanyModel> getAllCompanies() {
+        return (ArrayList<CompanyModel>) companyRepository.findAll();
     }
 
     @Transactional

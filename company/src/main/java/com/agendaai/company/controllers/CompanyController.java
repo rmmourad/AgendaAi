@@ -1,5 +1,6 @@
 package com.agendaai.company.controllers;
 
+import java.util.ArrayList;
 import java.util.UUID;
 
 import org.springframework.beans.BeanUtils;
@@ -36,6 +37,12 @@ public class CompanyController {
         return ResponseEntity.status(HttpStatus.CREATED).body(companyService.save(companyModel));
     }
 
+    @GetMapping("/companies")
+    public ResponseEntity<ArrayList<CompanyModel>> getAllComapanies() {
+        ArrayList<CompanyModel> cModels = companyService.getAllCompanies();
+        return ResponseEntity.ok(cModels);
+    }
+
     @GetMapping("/companies/{companyId}")
     public ResponseEntity<CompanyModel> getCompanyById(@PathVariable UUID companyId) {
         CompanyModel companyModel = companyService.getCompanyById(companyId);
@@ -51,8 +58,6 @@ public class CompanyController {
         CompanyModel companyModel = companyService.updateCompany(companyId, nCompany);
         return ResponseEntity.ok(companyModel);
     }
-
-
 
     @DeleteMapping("/companies/{companyId}")
     public ResponseEntity<CompanyModel> deleteCompanyById(@PathVariable UUID companyId) {
