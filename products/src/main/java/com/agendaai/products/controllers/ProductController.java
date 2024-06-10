@@ -1,5 +1,6 @@
 package com.agendaai.products.controllers;
 
+import java.util.ArrayList;
 import java.util.UUID;
 
 import org.springframework.beans.BeanUtils;
@@ -35,9 +36,19 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.CREATED).body(pService.save(pModel));
     }
 
-    @GetMapping("/products/{productid}")
-    public ResponseEntity<ProductModel> getProductById(@PathVariable UUID pUuid) {
-        ProductModel pModel = pService.getProductByid(pUuid);
+    @GetMapping("/products")
+    public ResponseEntity<ArrayList<ProductModel>> getAllProducts() {
+        ArrayList<ProductModel> pModels = (ArrayList<ProductModel>) pService.getAllProducts();
+
+        if(pModels != null)
+            return ResponseEntity.ok(pModels);
+        
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+    }
+
+    @GetMapping("/products/{productId}")
+    public ResponseEntity<ProductModel> getProductById(@PathVariable UUID productId) {
+        ProductModel pModel = pService.getProductByid(productId);
         if(pModel != null)
             return ResponseEntity.ok(pModel);
         

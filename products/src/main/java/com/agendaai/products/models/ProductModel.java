@@ -1,9 +1,7 @@
 package com.agendaai.products.models;
 
-import java.util.ArrayList;
 import java.util.UUID;
 
-import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

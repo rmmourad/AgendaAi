@@ -25,7 +25,7 @@ public class ProductService {
         return productRepository.findById(productId).orElse(null);
     }
 
-    public List<ProductModel> getAllProducts(UUID productId) {
+    public List<ProductModel> getAllProducts() {
         return productRepository.findAll();
     }
 
