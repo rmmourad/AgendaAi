@@ -19,13 +19,12 @@ public class CompanyModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID companyID;
     private String companyName;
-    private String companyPassword;
     private String companyCep;
     private String companyCnpj;
     private String companyEmail;
     private String companyTelNumber;
-    private double companyReview;
-    private int companyQtdReview;
+    // private double companyReview;
+    // private int companyQtdReview;
     private ArrayList<String> companySocialLinks;
 
     public static long getSerialversionuid(){
@@ -88,28 +87,23 @@ public class CompanyModel implements Serializable {
         this.companySocialLinks = socialLinks;
     }
 
-    public double getCompanyReview() {
-        return companyReview/getCompanyQtdReview();
-    }
+    // public double getCompanyReview() {
+    //     if(this.getCompanyReview() == 0)
+    //         this.setCompanyQtdReview(1);
+        
+    //         return companyReview/getCompanyQtdReview();
+    // }
 
-    public void setCompanyReview(double companyReview) {
-        this.companyReview = companyReview;
-    }
+    // public void setCompanyReview(double companyReview) {
+    //     this.companyReview = companyReview;
+    // }
 
-    public int getCompanyQtdReview() {
-        return companyQtdReview;
-    }
+    // public int getCompanyQtdReview() {
+    //     return companyQtdReview;
+    // }
 
-    public void setCompanyQtdReview(int companyQtdReview) {
-        this.companyQtdReview = companyQtdReview;
-    }
-
-    public String getCompanyPassword() {
-        return companyPassword;
-    }
-
-    public void setCompanyPassword(String companyPassword) {
-        this.companyPassword = companyPassword;
-    }
+    // public void setCompanyQtdReview(int companyQtdReview) {
+    //     this.companyQtdReview = companyQtdReview;
+    // }
     
 }
