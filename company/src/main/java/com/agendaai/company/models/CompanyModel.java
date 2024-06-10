@@ -19,6 +19,7 @@ public class CompanyModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID companyID;
     private String companyName;
+    private String companyPassword;
     private String companyCep;
     private String companyCnpj;
     private String companyEmail;
@@ -101,6 +102,14 @@ public class CompanyModel implements Serializable {
 
     public void setCompanyQtdReview(int companyQtdReview) {
         this.companyQtdReview = companyQtdReview;
+    }
+
+    public String getCompanyPassword() {
+        return companyPassword;
+    }
+
+    public void setCompanyPassword(String companyPassword) {
+        this.companyPassword = companyPassword;
     }
     
 }
