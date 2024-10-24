@@ -1,0 +1,6 @@
+[submodule "Desenvolvimento/3.Implementacao/Codigo-fonte/AgendaAi-API"]
+	path = Desenvolvimento/3.Implementacao/Codigo-fonte/AgendaAi-API
+	url = git@github.com:Gebarito/AgendaAi-API.git
+[submodule "Desenvolvimento/3.Implementacao/Codigo-fonte/AgendaAi-APP"]
+	path = Desenvolvimento/3.Implementacao/Codigo-fonte/AgendaAi-APP
+	url = git@github.com:Gebarito/AgendaAi-APP.git
